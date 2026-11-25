@@ -13,7 +13,7 @@
   "kv_namespaces": [
     {
       "binding": "RELAYRUN_KV",
-      "id": "db0948a4ab9543f398236d7fbd63a41f"
+      "id": "<YOUR_KV_NAMESPACE_ID>"
     }
   ]
 }
