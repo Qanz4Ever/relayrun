@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "relayrun",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2025-04-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "RELAYRUN_KV",
+      "id": "db0948a4ab9543f398236d7fbd63a41f"
+    }
+  ]
+}

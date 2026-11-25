@@ -1,0 +1,29 @@
+{
+  "name": "relayrun",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types tests/worker.test.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.49.4",
+    "hono": "4.7.7",
+    "lucide-react": "0.511.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250422.0",
+    "@tailwindcss/vite": "4.1.4",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "@vitejs/plugin-react": "4.4.1",
+    "tailwindcss": "4.1.4",
+    "typescript": "5.8.3",
+    "vite": "6.3.2"
+  }
+}
